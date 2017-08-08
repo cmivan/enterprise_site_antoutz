@@ -1,0 +1,87 @@
+/**
+ * @fileoverview 基础
+ *
+ * @author cm.ivan
+ */
+html{color:#000;overflow-y:scroll;}body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,input,textarea,form,th,td{margin:0;padding:0}body,button,input,select,textarea{font:14px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp,tt{font-family:"Courier New",Courier,monospace}small{font-size:12px}ul,ol{list-style:none; padding:0; margin:0;}a{text-decoration:none; color:#06c;}a:hover{text-decoration:none;color:#ff7300}abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help}q:before,q:after{content:''}:focus{outline:0}legend{color:#000}fieldset,img{border:0}button,input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}hr{border:0;height:1px;*color:#fff}img{-ms-interpolation-mode:bicubic}
+body{background:url(../images/bg-zh01.png) #666 no-repeat center top;}
+img, div, input { behavior: url("public/iepngfix/main.htc") }
+
+/**
+ * @fileoverview 顶部
+ *
+ * @author cm.ivan
+ */
+.clear{clear:both;height:1px;line-height:1px;}
+.mainBody{ width:1003px;margin:auto;}
+.pageHeader,.pageBody{ margin:0 auto; padding-bottom:8px; }
+.pageBody{ padding-bottom:0; }
+
+.pageHeader {
+position:relative;
+margin:auto;height:80px;
+background:url(../images/pageHeader_bg.png) repeat-x center top;
+}
+
+/**
+ * @fileoverview 主导横
+ *
+ * @author cm.ivan
+ */	
+.pageHeader .topBtn {
+	height:24px;
+	position:relative;
+	}
+.pageHeader .navMain {
+	position:relative;
+	}
+.pageHeader .navMain h1{
+	position:absolute;
+	left:25px;
+	width:100px;
+	height:120px;
+	z-index:10;
+	}
+.pageHeader .navMain .topNav{
+	margin:auto;
+	padding-top:15px;
+	height:28px;
+	width:700px;
+	line-height:28px;
+	border: none;
+	font-weight: bold;
+	text-align: center;
+	float: right;
+	}
+.pageHeader .navMain .topNav li {float: left;padding:3px; padding-top:0; padding-bottom:0;}
+.pageHeader .navMain .topNav li a {float:left;padding-left:15px;}
+.pageHeader .navMain .topNav li a p{float:left;padding:0;padding-right:15px;font-size:14px;height:28px;line-height: 28px; color:#25221f; cursor:pointer;}
+.pageHeader .navMain .topNav li a:hover,.pageHeader .navMain .topNav li a.on { background-color:#663300;text-decoration:none;background:url(../images/nav_main_on.gif) no-repeat center left;}
+.pageHeader .navMain .topNav li a:hover p,.pageHeader .navMain .topNav li a.on p{text-decoration none;color:#fff;background:url(../images/nav_main_on.gif) no-repeat center right;}
+.pageHeader .navMain .topNav ul { padding-left: 21px; *zoom: 1; }
+.pageHeader .navMain .topNav ul:after { display: block;clear: both;height: 0;content: "\0020"; }
+
+
+
+.pageBody .indexBody{
+margin-top:-65px;
+height:700px;
+width:980px;overflow:hidden; margin-left:auto; margin-right:auto;
+background-image:url(../images/index_bg.jpg);
+background-position:center top;
+background-repeat:no-repeat;
+}
+
+.pageBody .pageLeft{
+	float:left;
+	width:192px;
+}
+.pageBody .pageRight{
+margin-left:200px;
+}
+#pageFooter{
+margin-bottom:-2px;
+display:block;
+height:6px;
+line-height:6px;
+}
